@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* end of import and miscellaneous */
+
+/* body */
+body{
+    font-size: 16px;
+    background: url('assets/images/background-pattern-desktop.svg') no-repeat top center;
+              background-size: cover;
+              background-repeat: no-repeat;
+              max-height: 10vh;
+}
+
+/* Font */
+.worksans_font{
+    font-family: 'Work Sans', sans-serif;
+}
+
+#accordion-1, #accordion-2, #accordion-3, #accordion-4{
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Colors */
+.white_color{
+    color: hsl(0, 0%, 100%)
+}
+
+.lightpink_color{
+    color: hsl(275, 100%, 97%)
+}
+
+.grayishpurple_color{
+    color: hsl(292, 16%, 49%)
+}
+
+.darkpurple_color{
+    color: hsl(292, 42%, 14%)
+}
+
+/* white container */
+#white-container{
+    width: 40vw;
+    height: auto;
+    min-width: 40vw;
+    margin: 30vh auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 20px 25px;
+}
+
+/* title */
+
+#icon_star{
+    padding: 10px 10px 10px 0;
+}
+
+#title{
+    font-size: 32px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    color: hsl(292, 42%, 14%);
+    display: flex;
+    align-items: center;
+}
+
+.hide-content{
+    display: none;
+}
+
+.plus-button{
+    display: block;
+}
+
+.accordion-title{
+padding: 20px 0;
+font-weight: 600;
+color: hsl(292, 42%, 14%);
+}
