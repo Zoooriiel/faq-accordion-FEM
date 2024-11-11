@@ -6,13 +6,29 @@
 
 /* end of import and miscellaneous */
 
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* end of reset */
+
 /* body */
 body{
     font-size: 16px;
-    background: url('assets/images/background-pattern-desktop.svg') no-repeat top center;
-              background-size: cover;
-              background-repeat: no-repeat;
-              max-height: 10vh;
+    background: url('assets/images/background-pattern-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 20;
+    overflow: hidden;
 }
 
 /* Font */
@@ -43,23 +59,26 @@ body{
 
 /* white container */
 #white-container{
-    width: 40vw;
+    width: 38vw;
     height: auto;
-    min-width: 40vw;
-    margin: 30vh auto;
+    min-width: 30vw;
+    margin: 20vh auto;
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
-    padding: 20px 25px;
+    padding: 27px 35px;
+    box-shadow: 0px 20px 300px 20px hsla(281, 83%, 55%, 0.19), 0px 20px 30px 0 rgba(0, 0, 0, 0.07);
 }
 
 /* title */
 
 #icon_star{
-    padding: 10px 10px 10px 0;
+    padding: 20px 20px 20px 5px;
+    height: auto;
+    width: 57px;
 }
 
 #title{
-    font-size: 32px;
+    font-size: 45px;
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
     color: hsl(292, 42%, 14%);
@@ -67,16 +86,32 @@ body{
     align-items: center;
 }
 
+/* accordion header and title text*/
+.accordion-header{
+padding: 20px 0;
+font-weight: 600;
+color: hsl(292, 42%, 14%);
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.accordion-titletext:hover{
+    color: #b02cec;
+    cursor: pointer;
+}
+
+/* accordion content */
+#accordion-1-content, #accordion-2-content, #accordion-3-content, #accordion-4-content{
+    color: hsl(292, 16%, 49%);
+    margin: 5px 0 35px 0;
+}
+
+/* Javascript hide and reveal content */
 .hide-content{
     display: none;
 }
 
-.plus-button{
+.reveal-content{
     display: block;
-}
-
-.accordion-title{
-padding: 20px 0;
-font-weight: 600;
-color: hsl(292, 42%, 14%);
 }
